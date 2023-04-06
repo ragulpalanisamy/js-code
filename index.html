@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--     <link rel="stylesheet" href="css/bootstrap.min.css">
+ -->    <link rel="stylesheet" href="main.css">
+    <script src="index.js"></script>
+    <script src="utilities.js"></script>
+    <title>Github Explorer</title>
+</head>
+<body onload="onApplicationLoad()">
+      <!-- CLoad Mask-->
+      <!-- <div id="loading" style="text-align:center">
+            <h1>Loading</h1>
+      </div>
+    	 --><!-- Container which holds the page-->
+	<div class="container">
+		<!-- Header section-->
+		<section class="header">
+			<navbar>
+				<ul>
+			  		<li class="active">Github Explorer</li>
+				</ul>
+			</navbar>
+            </section>
+		<!-- User search section-->
+		<section class="card-section">
+			<span>
+                        <input type="text" name="username" class="username-btn" id="username" title="Enter Username" placeholder="Enter Username">
+                  </span>
+                  <span id="btn-container">
+                        <button type="button" class="btn btn-success app-btn" onclick="onClickAddUser()">Add</button>
+                        <button type="button" class="btn btn-danger app-btn" onclick="onClickClear()">Clear</button>
+                        <button type="button" class="btn btn-primary app-btn" onclick="onClickResetSearch()">Reset Search</button>
+                  </span>
+                
+			<div id="cardsContainer">
+                  </div>
+		</section>
+	</div>
+</body>
+</html>
+
+
+
