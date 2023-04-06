@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Github Explorer : Repositories and Followers</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="uD.js"></script>
+    <script src="utilities.js"></script>
+</head>
+<body onload="onRepoFollowersAppLoad()" style="background: #f5f5dc99;">
+    <div>
+        <img id="profileImg" class="img-responsive" src="" alt="profile Image of user" srcset="">
+        <h1 id="name"></h1>
+    </div>
+    <hr class="separator">
+    <div id="loading"></div>  
+    
+    <div class="row userRow">
+        
+        <div class="repos col-xs-5 col-xs-offset-1 col-sm-5 col-xs-offset-1 col-md-5 col-xs-offset-1 col-lg-5 col-xs-offset-1">     
+            <h1>Repositories</h1>
+            <hr class="separator">
+                <ol id="repoList">
+
+                </ol>
+        </div>
+
+        <div class="followers col-xs-5 col-xs-offset-0 col-sm-5 col-xs-offset-0 col-md-5 col-xs-offset-0 col-lg-5 col-xs-offset-0"> 
+            <h1>Followers</h1>
+            <hr class="separator">
+                <ol id="followersList">
+
+                </ol>
+        </div>
+    </div>
+    
+</body>
+</html>
